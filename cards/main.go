@@ -8,8 +8,9 @@ func main() {
 	// hand.print()
 	// remainingDeck.print()
 
-	// cards.saveToFile("my_cards.txt")
-	// cards := readDeckFromFIle("my_cards.txt")
+	// filename := "my_cards.txt"
+	// cards.saveToFile(filename)
+	// cards := readDeckFromFile(filename)
 
 	cards.shuffle()
 	cards.print()

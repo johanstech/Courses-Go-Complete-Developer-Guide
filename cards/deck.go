@@ -49,7 +49,7 @@ func (d deck) saveToFile(filename string) error {
 	return os.WriteFile(filename, []byte(d.toString()), 0666)
 }
 
-func readDeckFromFIle(filename string) deck {
+func readDeckFromFile(filename string) deck {
 	bs, err := os.ReadFile(filename)
 	if err != nil {
 		fmt.Println("Error:", err)
