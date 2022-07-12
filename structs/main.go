@@ -25,8 +25,11 @@ func main() {
 	}
 	person1.print()
 
-	person1Pointer := &person1
-	person1Pointer.updateName("Bobbiest")
+	//? Updating values at pointers is so common that there's a shortcut:
+	//? We can pass a value to a receiver function expecting a pointer
+	//? as long as the value type and the pointer type are the same
+	//? eg. person and *person
+	person1.updateName("Bobbiest")
 	person1.lastName = "Boblington"
 	person1.print()
 }
